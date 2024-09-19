@@ -1,0 +1,122 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10rem; */
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 35rem;
+}
+
+.top {
+    position: relative;
+    width: -webkit-fill-available;
+    height: 35rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    height: 35rem;
+    background-image: url('/public/bck.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+  
+.top > * {
+    position: relative;
+    z-index: 2;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn Link {
+    color: black;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1c1c1c;
+    width: 14rem;
+    height: 3rem;
+    margin: 2rem;
+    background-color: #ebebeb;
+}
+
+/* From Uiverse.io by portseif */ 
+.btn button {
+    align-items: center;
+    background-color: transparent;
+    color: #1c1c1c;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+  }
+  
+.btn button:before {
+    background-color: #1c1c1c;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+}
+  
+.btn button:hover:before {
+    background-color: #1c1c1c;
+    width: 3rem;
+}
+
+.design {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-design img {
+    margin: 1rem;
+    width: 50rem;
+    height: 30rem;
+}

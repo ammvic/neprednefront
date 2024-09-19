@@ -1,0 +1,115 @@
+.addEmp-section {
+    width: 50rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: #ebebeb;
+    box-shadow: 0 0 4rem #1c1c1c57;
+  }
+  
+  .addEmp-section h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .addEmp-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
+  
+  .addEmp-section label {
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+  
+  .addEmp-section input[type="text"],
+  .addEmp-section input[type="password"],
+  .addEmp-section input[type="email"],
+  .addEmp-section select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #1c1c1c;
+    background-color: transparent;
+  }
+  
+  .addEmp-section select {
+    width: 21rem;
+    border: 1px solid #1c1c1c;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .addEmp-section select:focus {
+    border-color: #4a90e2;
+    background-color: #f0f4f8;
+  }
+  
+  .addEmp-section .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1c1c1c;
+    width: 14rem;
+    height: 3rem;
+    margin: 2rem 0;
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+  
+  .addEmp-section .btn button {
+    background-color: transparent;
+    color: #1c1c1c;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .addEmp-section .btn button:before {
+    background-color: #1c1c1c;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 0;
+  }
+  
+  .addEmp-section .btn button:hover:before {
+    width: 3rem;
+  }
+  
+  .notification {
+    font-size: 1.2rem;
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  

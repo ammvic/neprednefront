@@ -1,0 +1,230 @@
+.photo-gallery-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 2rem #1c1c1c57;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access-code-form {
+  margin-bottom: 20px;
+}
+
+.photo-thumbnail {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Dodato da bi dugme bilo ispod slike */
+  align-items: center; /* Centrirano dugme */
+  margin-bottom: 10px;
+}
+
+.design-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dva stupca */
+  gap: 20px; /* Razmak između slika */
+}
+
+.design-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.design-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.design-option p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.design-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px; /* Ograničena širina modala */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1100;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Omogućava skrolovanje ako je sadržaj prevelik */
+  max-height: 70vh; /* Ograniči visinu modala */
+}
+
+.design-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.design-option {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.design-option.selected {
+  border-color: green; /* Zeleni okvir za odabrani dizajn */
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  color: green;
+}
+
+.close-modal-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-modal-button:hover {
+  background-color: #e53935;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+
+.select-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #4CAF50; /* Oznaka za označene fotografije */
+}
+
+.download-button {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Prostor između slike i dugmeta */
+  width: auto; /* Dugme će biti šire prema dužini teksta */
+}
+
+.download-button:hover {
+  background-color: #0e0e0e;
+}
+
+
+.photo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-thumbnail:hover .photo-image {
+  transform: scale(1.05); /* Blago povećanje slike na hover */
+}
+
+.error-message {
+  color: red;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: zoomIn 0.3s ease;
+}
+
+.lightbox img {
+  max-width: 85%; /* Povećan maksimalan prikaz slike */
+  max-height: 85%;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.photo-gallery-content {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.photo-gallery-container button {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photo-gallery-container button:hover {
+  background-color: #0e0e0e;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.download-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}

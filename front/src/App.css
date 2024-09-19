@@ -1,0 +1,22 @@
+body {
+  background-color: #ebebeb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nf a{
+  color: black;
+}
+
+.nf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}

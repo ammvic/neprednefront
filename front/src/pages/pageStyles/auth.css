@@ -1,0 +1,121 @@
+.auth-container {
+  width: 35rem;
+  margin: 2rem auto 10rem;
+  padding: 3rem;
+  background-color: #ebebeb;
+  box-shadow: 0 0 4rem #1c1c1c57;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authForm-group {
+  margin: 1.4rem auto 2rem;
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#name {
+  flex: 1;
+}
+#name input {
+    width: 13.9rem;
+}
+
+.auth-form h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.auth-container label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.authForm-group select {
+  width: 30rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #1c1c1c;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s ease, 0.3s ease;
+}
+
+.authForm-group select:focus {
+  border-color: #4a90e2;
+  background-color: #f0f4f8;
+  outline: none;
+}
+
+.authForm-group option {
+  padding: 0.6rem;
+}
+
+.auth-container input[type="text"], 
+.auth-container input[type="password"],
+.auth-container input[type="email"] {
+  width: 30rem;
+  padding: 0.6rem;
+  padding-bottom: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1c1c1c;
+  background-color: transparent;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1c1c1c;
+  width: 14rem;
+  height: 3rem;
+  margin: 2rem;
+  background-color: #ebebeb;
+}
+
+/* From Uiverse.io by portseif */
+.btn button {
+  align-items: center;
+  background-color: transparent;
+  color: #1c1c1c;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+.btn button:before {
+  background-color: #1c1c1c;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+
+.btn button:hover:before {
+  background-color: #1c1c1c;
+  width: 3rem;
+}
